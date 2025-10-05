@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/popupImage"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="340dp"
+        android:elevation="2dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/uithing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997" />
+
+    <!--CLOCK T1-->
+
+    <EditText
+        android:id="@+id/popupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:hint="Enter your time"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="343dp" />
+
+    <TextView
+        android:id="@+id/ClockTitlet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="600dp"
+        android:text="Time"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Inputt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="544dp"
+        android:text="Input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Startt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Start"
+        app:layout_constraintEnd_toStartOf="@+id/Inputt2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Inputt1"
+        app:layout_constraintTop_toTopOf="@+id/Inputt1" />
+
+    <TextView
+        android:id="@+id/trackerTextt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="000.0"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/ClockTitlet1"
+        app:layout_constraintStart_toStartOf="@+id/ClockTitlet1"
+        app:layout_constraintTop_toBottomOf="@+id/Inputt1" />
+
+    <Button
+        android:id="@+id/Stopt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="371dp"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Resett2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@+id/Stopt2"
+        app:layout_constraintTop_toTopOf="@+id/Stopt2" />
+
+    <Button
+        android:id="@+id/Stopt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Stop"
+        app:layout_constraintEnd_toStartOf="@+id/Resett2"
+        app:layout_constraintStart_toEndOf="@+id/Resett1"
+        app:layout_constraintTop_toTopOf="@+id/Stopt1" />
+
+    <Button
+        android:id="@+id/Resett1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Reset"
+        app:layout_constraintEnd_toStartOf="@+id/Stopt2"
+        app:layout_constraintStart_toEndOf="@+id/Stopt1"
+        app:layout_constraintTop_toTopOf="@+id/Stopt1" />
+
+    <TextView
+        android:id="@+id/trackerTitlet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Penalty"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ClockTitlet1"
+        app:layout_constraintStart_toStartOf="@+id/ClockTitlet1"
+        app:layout_constraintTop_toBottomOf="@+id/Stopt1" />
+
+    <!--CLOCK T2-->
+
+    <TextView
+        android:id="@+id/ClockT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="484dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="181dp"
+        android:text="000.0"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/ClockTitlet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="279dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="600dp"
+        android:text="Time"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Inputt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="547dp"
+        android:text="Input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Startt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Start"
+        app:layout_constraintStart_toEndOf="@+id/Inputt2"
+        app:layout_constraintTop_toTopOf="@+id/Inputt2" />
+
+    <TextView
+        android:id="@+id/trackerTextt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="000.0"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/ClockTitlet2"
+        app:layout_constraintStart_toStartOf="@+id/ClockTitlet2"
+        app:layout_constraintTop_toBottomOf="@+id/Inputt2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/trackerTitlet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penalty"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ClockTitlet2"
+        app:layout_constraintStart_toStartOf="@+id/ClockTitlet2"
+        app:layout_constraintTop_toTopOf="@+id/trackerTitlet1" />
+
+    <Button
+        android:id="@+id/trackerAddt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Add"
+        app:layout_constraintEnd_toStartOf="@+id/trackerResett2"
+        app:layout_constraintStart_toEndOf="@+id/trackerResett1"
+        app:layout_constraintTop_toTopOf="@+id/trackerAddt1" />
+
+    <Button
+        android:id="@+id/trackerAddt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="411dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="272dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/trackerResett2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Reset"
+        app:layout_constraintStart_toEndOf="@+id/trackerAddt2"
+        app:layout_constraintTop_toTopOf="@+id/trackerAddt2" />
+
+    <Button
+        android:id="@+id/trackerResett1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Reset"
+        app:layout_constraintEnd_toStartOf="@+id/trackerAddt2"
+        app:layout_constraintStart_toEndOf="@+id/trackerAddt1"
+        app:layout_constraintTop_toTopOf="@+id/trackerAddt1" />
+
+    <!-- Final Time -->
+
+    <TextView
+        android:id="@+id/ClockT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="234dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="181dp"
+        android:text="000.0"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trackerTitlet2" />
+
+    <TextView
+        android:id="@+id/finalTimeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Final Times"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ClockT1" />
+
+    <TextView
+        android:id="@+id/finalTimet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="000.0"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/ClockTitlet1"
+        app:layout_constraintStart_toStartOf="@+id/ClockTitlet1"
+        app:layout_constraintTop_toBottomOf="@+id/finalTimeTitle" />
+
+    <TextView
+        android:id="@+id/finalTimet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000.0"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/ClockTitlet2"
+        app:layout_constraintStart_toStartOf="@+id/ClockTitlet2"
+        app:layout_constraintTop_toTopOf="@+id/finalTimet1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
